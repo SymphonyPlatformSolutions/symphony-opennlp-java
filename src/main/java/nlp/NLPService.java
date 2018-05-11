@@ -58,6 +58,7 @@ public class NLPService {
                     } else {
                         itr = pattern.getPOSRequirementList().iterator();
                         currentPOSReq= itr.next();
+                        parameters.clear();
                     }
                 }
                 if(match){
