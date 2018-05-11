@@ -3,14 +3,14 @@ Library for integration with openNLP for Symphony bots
 Given a message and a file with a list of patterns, returns a list of actions and any given parameters found.
 
 
-###Install using maven
+### Install using maven
         <dependency>
             <groupId>com.symphony.platformsolutions</groupId>
             <artifactId>symphony-opennlp-java</artifactId>
             <version>1.0.0-SNAPSHOT</version>
         </dependency>
         
-##Configuration
+## Configuration
 Create a nlp-config.json file in your project which includes the following properties
 
     {
@@ -76,7 +76,7 @@ For each Pattern object:
     - paramater  (optional) defines the name of the pafamater that the value of this POS would fill
     - pos (required) defines the POS to match for, or * for any POS in that position For a list of POS click [here](https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html)
 
-##How to use in your bot code:
+## How to use in your bot code:
     URL nlpUrl = getClass().getResource("nlp-config.json");
     NLPConfig nlpConfig = NLPConfigLoader.loadFromFile(nlpUrl.getPath());
     NLPService nlp = new NLPService(nlpConfig);
