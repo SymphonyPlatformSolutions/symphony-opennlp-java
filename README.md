@@ -20,8 +20,8 @@ Create a nlp-config.json file in your project which includes the following prope
     }
     
 Create a patterns.json file. It defines a list of patterns to be mapped into actions. For example:
-    [
     
+    [
       {"action":"buyShares",
         "posrequirementList":[
           {"options":["buy","purchase"],"parameter":null,"pos":"V"},
