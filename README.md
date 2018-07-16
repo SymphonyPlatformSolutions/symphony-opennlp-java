@@ -7,7 +7,7 @@ Given a message and a file with a list of patterns, returns a list of actions an
         <dependency>
             <groupId>com.symphony.platformsolutions</groupId>
             <artifactId>symphony-opennlp-java</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <version>1.0.0</version>
         </dependency>
         
 ## Configuration
